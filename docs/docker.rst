@@ -53,6 +53,9 @@ your pipeline execution.
     input files. Note, however, that when a process input is a *symbolic link* file, the linked file **must** be stored
     in the same folder where the symlink is located, or any its sub-folder. Otherwise the process execution will fail because the
     launched container won't be able to access the linked file.
+    
+ .. warning::
+    Nextflow will give the priority to the "bin" folder if a program is found in both this folder and the Docker / singularity image.  
 
 
 Multiple containers
