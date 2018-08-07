@@ -899,6 +899,11 @@ Some caveats on glob pattern behavior:
     By default all the files matching the specified glob pattern are emitted by the channel as a sole (list) item.
     It is also possible to emit each file as a sole item by adding the ``mode flatten`` attribute in the output file
     declaration.
+    
+A pattern can be also specified by indicating one or more matching, like::
+
+        output:
+        file '*.{txt,rtf}' into documents
 
 By using the `mode` attribute the previous example can be re-written as show below::
 
