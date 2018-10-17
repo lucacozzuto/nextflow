@@ -1236,6 +1236,8 @@ The above example prints::
     [X, 1, 4]
     [P, 7, null]
 
+When the channels are genereting using ``watchPath`` the option ``remainder`` won't work since is not possible to know in advance the totality of the joined channels.
+
 
 The following parameters can be used with the ``join`` operator:
 
