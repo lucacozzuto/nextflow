@@ -163,6 +163,9 @@ its results are retrieved from the cache. The second process is executed as expe
 
 .. tip:: The pipeline results are cached by default in the directory ``$PWD/work``. Depending on your script, this folder
   can take of lot of disk space. If your are sure you won't resume your pipeline execution, clean this folder periodically.
+  
+.. tip:: Sometimes is useful to resume a previous instance of the pipeline. You can access every execution by using the command ```nextflow log``` and then resuming the one you prefer by using the ```nextflow -resume ```with the correspondent ```SESSION ID```.
+
 
 .. _getstart-params:
 
